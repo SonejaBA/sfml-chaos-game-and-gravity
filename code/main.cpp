@@ -14,7 +14,7 @@ int main() {
 
 	const int AMOUNT_OF_PARTICLES = 10000;
 
-	RenderWindow window(VideoMode(1280, 720), "Chaos");
+	RenderWindow window(VideoMode(1280, 720), "Chaos Game");
 	window.setFramerateLimit(60);
 
 	vector<Particle> particles;
