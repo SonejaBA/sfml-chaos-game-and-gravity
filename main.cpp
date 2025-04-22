@@ -22,7 +22,7 @@ int main() {
 	bool blackHoleReady = false;
 
 	SoundBuffer soundbuffer;
-	if (!soundbuffer.loadFromFile("tone.wav")) {
+	if (!soundbuffer.loadFromFile("assets/sounds/tone.wav")) {
 		cout << "error. sound file not found.";
 		return -1;
 	}
@@ -32,7 +32,7 @@ int main() {
 	sound.setVolume(10);
 
 	Font font;
-	if (!font.loadFromFile("uni-sans.heavy-italic-caps.otf")) {
+	if (!font.loadFromFile("assets/fonts/uni-sans.heavy-italic-caps.otf")) {
 		cout << "error. font file not found.";
 		return -1;
 	}
@@ -80,7 +80,7 @@ int main() {
 					blackHoleReady = true;
 					
 
-					if (!soundbuffer.loadFromFile("explosion.wav")) {
+					if (!soundbuffer.loadFromFile("assets/sounds/explosion.wav")) {
 						cout << "error. sound file not found.";
 						return -1;
 					}
